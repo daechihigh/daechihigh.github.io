@@ -5,45 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>대치하이영어학원 | 다산신도시 중고등 입시전문</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        crimson: {
+                            50: '#fbf4f6',
+                            100: '#f6eef1',
+                            200: '#e3d2d6',
+                            300: '#c5aeb4',
+                            400: '#a37e87',
+                            500: '#862633', /* KU Official Crimson */
+                            600: '#751a26',
+                            700: '#63121d',
+                            800: '#4a0d15',
+                            900: '#2b050a',
+                        },
+                        naver: {
+                            green: '#03C75A'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .naver-green { color: #03C75A; }
-        .bg-naver-green { background-color: #03C75A; }
-    </style>
 </head>
-<body class="bg-gray-50 font-sans break-keep">
+<body class="bg-gray-50 font-sans break-keep selection:bg-crimson-200">
 
-    <nav class="bg-white shadow-md fixed w-full z-20">
+    <nav class="bg-white shadow-md fixed w-full z-20 border-b border-crimson-100">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div class="flex flex-col justify-center">
-                    <span class="text-xs text-indigo-600 font-bold tracking-widest">다산신도시 입시영어</span>
-                    <div class="text-2xl font-extrabold text-gray-900">대치하이<span class="text-indigo-600">영어</span></div>
+                    <span class="text-xs text-crimson-600 font-bold tracking-widest">다산신도시 입시영어</span>
+                    <div class="text-2xl font-extrabold text-gray-900">대치하이<span class="text-crimson-500">영어</span></div>
                 </div>
-                <div class="hidden md:flex space-x-8 font-bold text-gray-600">
-                    <a href="#about" class="hover:text-indigo-600 transition">학원소개</a>
-                    <a href="#curriculum" class="hover:text-indigo-600 transition">중등부/고등부</a>
-                    <a href="#system" class="hover:text-indigo-600 transition">관리시스템</a>
-                    <a href="#contact" class="hover:text-indigo-600 transition">입학문의</a>
+                <div class="hidden md:flex space-x-8 font-bold text-gray-700">
+                    <a href="#about" class="hover:text-crimson-600 transition">학원소개</a>
+                    <a href="#curriculum" class="hover:text-crimson-600 transition">중등부/고등부</a>
+                    <a href="#system" class="hover:text-crimson-600 transition">관리시스템</a>
+                    <a href="#contact" class="hover:text-crimson-600 transition">입학문의</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="pt-32 pb-24 bg-gradient-to-br from-gray-900 to-indigo-900 text-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center opacity-10"></div>
+    <section class="pt-32 pb-24 bg-gradient-to-br from-gray-900 via-crimson-900 to-crimson-800 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
         <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-            <span class="inline-block py-1 px-3 border border-indigo-400 rounded-full text-indigo-300 text-sm font-bold mb-6">Middle & High School Only</span>
+            <span class="inline-block py-1 px-3 border border-crimson-300 rounded-full text-crimson-100 text-sm font-bold mb-6">Middle & High School Only</span>
             <h1 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight">
                 "중등 내신 100점?<br>
                 <span class="text-yellow-400">고등 1등급</span>이 목표여야 합니다."
             </h1>
-            <p class="text-lg md:text-xl mb-10 text-gray-300">
+            <p class="text-lg md:text-xl mb-10 text-crimson-100">
                 감으로 푸는 영어는 통하지 않습니다.<br>
-                정확한 구문 분석과 논리 독해로 흔들리지 않는 실력을 만듭니다.
+                대치동의 치열함과 호랑이 같은 기세로 실력을 만듭니다.
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#contact" class="bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-indigo-500 transition shadow-lg ring-2 ring-indigo-500 ring-offset-2 ring-offset-gray-900">
+                <a href="#contact" class="bg-crimson-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-crimson-500 transition shadow-lg ring-2 ring-crimson-500 ring-offset-2 ring-offset-gray-900">
                     입학 상담 예약하기
                 </a>
                 <a href="https://blog.naver.com/daechi_high" target="_blank" class="bg-white text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg flex items-center justify-center gap-2">
@@ -57,60 +78,61 @@
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">대치하이의 3가지 원칙</h2>
-                <div class="w-16 h-1 bg-indigo-600 mx-auto"></div>
+                <div class="w-16 h-1 bg-crimson-600 mx-auto"></div>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 bg-gray-50 rounded-xl hover:-translate-y-2 transition duration-300 border border-gray-100">
-                    <h3 class="text-xl font-bold text-indigo-700 mb-3">01. 타협 없는 단어 암기</h3>
-                    <p class="text-gray-600">
-                        모든 공부의 시작은 어휘입니다. 매 수업 <strong class="text-gray-900">단어 테스트와 누적 복습</strong>을 진행하며, 기준 점수 미달 시 재시험(Re-test)을 통해 그날의 분량은 반드시 끝냅니다.
+                <div class="p-8 bg-crimson-50 rounded-xl hover:-translate-y-2 transition duration-300 border border-crimson-100">
+                    <h3 class="text-xl font-bold text-crimson-800 mb-3">01. 타협 없는 단어 암기</h3>
+                    <p class="text-gray-700">
+                        모든 공부의 시작은 어휘입니다. 매 수업 <strong class="text-crimson-900">단어 테스트와 누적 복습</strong>을 진행하며, 기준 점수 미달 시 재시험(Re-test)을 통해 그날의 분량은 반드시 끝냅니다.
                     </p>
                 </div>
-                <div class="p-8 bg-gray-50 rounded-xl hover:-translate-y-2 transition duration-300 border border-gray-100">
-                    <h3 class="text-xl font-bold text-indigo-700 mb-3">02. 감(Senses) 배제, 논리 독해</h3>
-                    <p class="text-gray-600">
-                        단순히 해석만 하는 것이 아닙니다. <strong class="text-gray-900">문장 구조 분석(Syntax)</strong>을 통해 출제자의 의도를 파악하고 정답의 근거를 찾아내는 훈련을 합니다.
+                <div class="p-8 bg-crimson-50 rounded-xl hover:-translate-y-2 transition duration-300 border border-crimson-100">
+                    <h3 class="text-xl font-bold text-crimson-800 mb-3">02. 감(Senses) 배제, 논리 독해</h3>
+                    <p class="text-gray-700">
+                        단순히 해석만 하는 것이 아닙니다. <strong class="text-crimson-900">문장 구조 분석(Syntax)</strong>을 통해 출제자의 의도를 파악하고 정답의 근거를 찾아내는 훈련을 합니다.
                     </p>
                 </div>
-                <div class="p-8 bg-gray-50 rounded-xl hover:-translate-y-2 transition duration-300 border border-gray-100">
-                    <h3 class="text-xl font-bold text-indigo-700 mb-3">03. 학교별 철저한 내신 분석</h3>
-                    <p class="text-gray-600">
-                        다산/남양주 지역 중고교의 <strong class="text-gray-900">기출 경향을 완벽 분석</strong>합니다. 교과서는 물론 부교재, 학교 프린트물까지 꼼꼼하게 변형 문제로 대비합니다.
+                <div class="p-8 bg-crimson-50 rounded-xl hover:-translate-y-2 transition duration-300 border border-crimson-100">
+                    <h3 class="text-xl font-bold text-crimson-800 mb-3">03. 학교별 철저한 내신 분석</h3>
+                    <p class="text-gray-700">
+                        다산/남양주 지역 중고교의 <strong class="text-crimson-900">기출 경향을 완벽 분석</strong>합니다. 교과서는 물론 부교재, 학교 프린트물까지 꼼꼼하게 변형 문제로 대비합니다.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="curriculum" class="py-20 bg-indigo-50">
+    <section id="curriculum" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Curriculum Roadmap</h2>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div class="bg-indigo-600 text-white p-6 text-center">
-                        <h3 class="text-2xl font-bold">중등부 (Middle)</h3>
-                        <p class="opacity-80 text-sm mt-1">고등 영어를 위한 탄탄한 초석</p>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-crimson-500">
+                    <div class="bg-white p-6 text-center border-b border-gray-100">
+                        <span class="text-crimson-600 font-bold tracking-widest text-sm">MIDDLE SCHOOL</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-2">중등부 과정</h3>
+                        <p class="text-gray-500 text-sm mt-1">고등 영어를 위한 탄탄한 초석</p>
                     </div>
                     <div class="p-8">
                         <ul class="space-y-4">
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-3"></i>
+                                <i class="fas fa-check-circle text-crimson-600 mt-1 mr-3"></i>
                                 <div>
                                     <strong class="block text-gray-800">문법(Grammar) 완성</strong>
                                     <span class="text-sm text-gray-600">고등 내신 서술형까지 대비하는 문법 개념 정리 및 영작 훈련</span>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-3"></i>
+                                <i class="fas fa-check-circle text-crimson-600 mt-1 mr-3"></i>
                                 <div>
                                     <strong class="block text-gray-800">구문 독해</strong>
                                     <span class="text-sm text-gray-600">주어, 동사, 수식어구를 정확히 파악하는 끊어 읽기 연습</span>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-3"></i>
+                                <i class="fas fa-check-circle text-crimson-600 mt-1 mr-3"></i>
                                 <div>
                                     <strong class="block text-gray-800">내신 기간 집중 관리</strong>
                                     <span class="text-sm text-gray-600">학교별 교과서 암기 및 기출 변형 문제 풀이 (4주 집중)</span>
@@ -120,93 +142,15 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-gray-800">
                     <div class="bg-gray-800 text-white p-6 text-center">
-                        <h3 class="text-2xl font-bold">고등부 (High)</h3>
-                        <p class="opacity-80 text-sm mt-1">내신 1등급과 수능 1등급의 조화</p>
+                        <span class="text-gray-400 font-bold tracking-widest text-sm">HIGH SCHOOL</span>
+                        <h3 class="text-2xl font-bold mt-2">고등부 과정</h3>
+                        <p class="text-gray-400 text-sm mt-1">내신 1등급과 수능 1등급의 조화</p>
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 bg-gray-50">
                         <ul class="space-y-4">
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-3"></i>
+                                <i class="fas fa-check-circle text-gray-800 mt-1 mr-3"></i>
                                 <div>
                                     <strong class="block text-gray-800">내신(GPA) 심화</strong>
-                                    <span class="text-sm text-gray-600">교과서 외 부교재/모의고사 지문 변형 문제 완벽 대비</span>
-                                </div>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-3"></i>
-                                <div>
-                                    <strong class="block text-gray-800">수능(CSAT) 실전</strong>
-                                    <span class="text-sm text-gray-600">고난도 빈칸 추론, 순서 배열 등 킬러 문항 집중 공략</span>
-                                </div>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-3"></i>
-                                <div>
-                                    <strong class="block text-gray-800">개별 약점 클리닉</strong>
-                                    <span class="text-sm text-gray-600">학생별 취약 유형 분석 및 1:1 맞춤 피드백 제공</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="system" class="py-20 bg-white">
-        <div class="max-w-5xl mx-auto px-4">
-            <div class="bg-gray-50 rounded-2xl p-8 md:p-12 border border-gray-200">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                    <i class="fas fa-tasks text-indigo-600 mr-3"></i> 대치하이 관리 시스템
-                </h3>
-                <div class="space-y-6">
-                    <div class="flex flex-col md:flex-row gap-4">
-                        <div class="w-full md:w-32 font-bold text-gray-700 bg-white p-3 text-center rounded border">Daily Test</div>
-                        <div class="flex-1 p-3 text-gray-600">등원 직후 지난 수업 복습 테스트 및 단어 시험 진행 (불합격 시 귀가 불가 원칙)</div>
-                    </div>
-                    <div class="flex flex-col md:flex-row gap-4">
-                        <div class="w-full md:w-32 font-bold text-gray-700 bg-white p-3 text-center rounded border">Feedback</div>
-                        <div class="flex-1 p-3 text-gray-600">매 수업 결과(테스트 점수, 과제 수행도) 및 학습 태도를 학부모님께 문자 전송</div>
-                    </div>
-                    <div class="flex flex-col md:flex-row gap-4">
-                        <div class="w-full md:w-32 font-bold text-gray-700 bg-white p-3 text-center rounded border">Atmosphere</div>
-                        <div class="flex-1 p-3 text-gray-600">수업 중 휴대폰 수거 및 면학 분위기 저해 요소 차단</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-20 bg-gray-900 text-white text-center">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4">상담 문의</h2>
-            <p class="text-gray-400 mb-10">
-                학생의 현재 위치를 정확히 진단하고, 가장 빠른 길을 제시합니다.<br>
-                (수업 중에는 통화가 어려울 수 있으니 문자 남겨주시면 연락드립니다.)
-            </p>
-            
-            <a href="tel:031-566-3687" class="inline-block bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-10 rounded-full text-2xl mb-12 transition transform hover:scale-105">
-                <i class="fas fa-phone-alt mr-2"></i> 031-566-3687
-            </a>
-
-            <div class="grid md:grid-cols-2 gap-8 text-left">
-                <div class="bg-gray-800 p-6 rounded-lg">
-                    <h4 class="font-bold text-lg mb-2 text-indigo-400">학원 위치</h4>
-                    <p class="text-gray-300">경기도 남양주시 다산동 (상세 주소는 전화 문의)</p>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-lg">
-                    <h4 class="font-bold text-lg mb-2 text-indigo-400">운영 대상</h4>
-                    <p class="text-gray-300">중등부 (예비중 포함) / 고등부 / 수능 입시반</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-black py-8 text-center text-gray-600 text-xs">
-        &copy; 2026 대치하이영어학원. All rights reserved.
-    </footer>
-
-</body>
-</html>
