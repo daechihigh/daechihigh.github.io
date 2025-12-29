@@ -10,7 +10,7 @@
             theme: {
                 extend: {
                     colors: {
-                        ku: '#862633', // 고려대 공식 크림슨 컬러 단일 지정
+                        ku: '#862633', // 고려대 공식 크림슨 컬러
                         naver: '#03C75A'
                     }
                 }
@@ -26,12 +26,13 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex flex-col justify-center">
                     <span class="text-[10px] text-gray-500 font-bold tracking-widest uppercase">Premium English Education</span>
-                    <div class="text-ku font-bold">대치하이<span class="text-yellow-400 font-bold">영어</span>학원</div>
+                    <div class="text-2xl font-extrabold text-gray-900">대치하이<span class="text-ku">영어</span></div>
                 </div>
                 <div class="hidden md:flex space-x-8 font-bold text-gray-600">
                     <a href="#about" class="hover:text-ku transition">학원소개</a>
                     <a href="#curriculum" class="hover:text-ku transition">중등부/고등부</a>
                     <a href="#system" class="hover:text-ku transition">관리시스템</a>
+                    <a href="#blog" class="hover:text-ku transition">학원소식</a>
                     <a href="#contact" class="hover:text-ku transition">입학문의</a>
                 </div>
             </div>
@@ -40,7 +41,6 @@
 
     <section class="pt-32 pb-24 bg-ku text-white relative">
         <div class="absolute inset-0 bg-black opacity-20"></div>
-        
         <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
             <span class="inline-block py-1 px-3 border border-white/30 rounded-full text-gray-100 text-sm font-bold mb-6">Middle & High School Only</span>
             <h1 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight">
@@ -130,30 +130,30 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg shadow border-t-4 border-gray-800">
-                    <div class="bg-gray-800 text-white p-6 text-center">
-                        <span class="text-gray-400 font-bold tracking-widest text-sm uppercase">High School</span>
-                        <h3 class="text-2xl font-bold mt-2">고등부 과정</h3>
-                        <p class="text-gray-400 text-sm mt-1">내신 1등급과 수능 1등급의 조화</p>
+                <div class="bg-white rounded-lg shadow border-t-4 border-ku">
+                    <div class="p-6 text-center border-b border-gray-100">
+                        <span class="text-ku font-bold tracking-widest text-sm uppercase">High School</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-2">고등부 과정</h3>
+                        <p class="text-gray-500 text-sm mt-1">내신 1등급과 수능 1등급의 조화</p>
                     </div>
-                    <div class="p-8 bg-white">
+                    <div class="p-8">
                         <ul class="space-y-4">
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-gray-800 mt-1 mr-3"></i>
+                                <i class="fas fa-check-circle text-ku mt-1 mr-3"></i>
                                 <div>
                                     <strong class="block text-gray-800">내신(GPA) 심화</strong>
                                     <span class="text-sm text-gray-600">교과서 외 부교재/모의고사 지문 변형 문제 완벽 대비</span>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-gray-800 mt-1 mr-3"></i>
+                                <i class="fas fa-check-circle text-ku mt-1 mr-3"></i>
                                 <div>
                                     <strong class="block text-gray-800">수능(CSAT) 실전</strong>
                                     <span class="text-sm text-gray-600">고난도 빈칸 추론, 순서 배열 등 킬러 문항 집중 공략</span>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-gray-800 mt-1 mr-3"></i>
+                                <i class="fas fa-check-circle text-ku mt-1 mr-3"></i>
                                 <div>
                                     <strong class="block text-gray-800">개별 약점 클리닉</strong>
                                     <span class="text-sm text-gray-600">학생별 취약 유형 분석 및 1:1 맞춤 피드백 제공</span>
@@ -189,6 +189,7 @@
             </div>
         </div>
     </section>
+
     <section id="blog" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -269,6 +270,7 @@
             </div>
         </div>
     </section>
+
     <section id="contact" class="py-20 bg-gray-900 text-white text-center border-t-8 border-ku">
         <div class="max-w-4xl mx-auto px-4">
             <h2 class="text-3xl font-bold mb-4">상담 문의</h2>
