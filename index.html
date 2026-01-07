@@ -21,13 +21,23 @@
 </head>
 <body class="bg-white font-sans break-keep text-gray-800">
 
-    <nav class="bg-white border-b border-gray-200 fixed w-full z-20">
+    <nav class="bg-white border-b border-gray-200 fixed w-full z-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
-                <div class="flex flex-col justify-center">
-                    <span class="text-[10px] text-gray-500 font-bold tracking-widest uppercase">Premium English Education</span>
-                    <div class="text-2xl font-extrabold text-gray-900"><span class="text-ku">대치</span><span class="text-yellow-400">하이</span><span class="text-ku">영어학원</span></div>
+                
+                <div class="flex items-center">
+                    <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none p-2 mr-3 hover:text-ku transition">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+
+                    <div class="flex flex-col justify-center cursor-pointer" onclick="location.href='#'">
+                        <span class="text-[10px] text-gray-500 font-bold tracking-widest uppercase">Premium English Education</span>
+                        <div class="text-2xl font-extrabold text-gray-900 leading-none">
+                            <span class="text-ku">대치</span><span class="text-yellow-400">하이</span><span class="text-ku">영어학원</span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="hidden md:flex space-x-8 font-bold text-gray-600">
                     <a href="#about" class="hover:text-ku transition">학원소개</a>
                     <a href="#curriculum" class="hover:text-ku transition">중등부/고등부</a>
@@ -36,6 +46,14 @@
                     <a href="#contact" class="hover:text-ku transition">상담문의</a>
                 </div>
             </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg">
+            <a href="#about" class="block py-4 px-6 text-gray-700 font-bold hover:bg-gray-50 border-b border-gray-50 transition">학원소개</a>
+            <a href="#curriculum" class="block py-4 px-6 text-gray-700 font-bold hover:bg-gray-50 border-b border-gray-50 transition">중등부/고등부</a>
+            <a href="#system" class="block py-4 px-6 text-gray-700 font-bold hover:bg-gray-50 border-b border-gray-50 transition">관리시스템</a>
+            <a href="#blog" class="block py-4 px-6 text-gray-700 font-bold hover:bg-gray-50 border-b border-gray-50 transition">학원소식</a>
+            <a href="#contact" class="block py-4 px-6 text-gray-700 font-bold hover:bg-gray-50 transition">상담문의</a>
         </div>
     </nav>
 
@@ -304,6 +322,24 @@
     <footer class="bg-black py-8 text-center text-gray-600 text-xs">
         &copy; 2026 대치하이영어학원. All rights reserved.
     </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = menu.querySelectorAll('a'); // 메뉴 내부 링크들
+
+        // 버튼 클릭 시 메뉴 보이기/숨기기
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // 메뉴 링크 클릭 시 자동으로 닫기
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
 
 </body>
 </html>
